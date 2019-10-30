@@ -1,0 +1,114 @@
+{
+  "game": {
+    "assetsPath": "assets/",
+    "fontPath": "../../../shared/assignment1 sample assets/",
+    "fontSize": 40,
+    "deathTime": 2500,
+    "startingLives": 3,
+    "tileSize": 40,
+    "width": 800,
+    "height": 600,
+    "velocityTier": [
+      40
+    ],
+    "graphicsBuffers": [
+      "wall_40.png",
+      "default_spritesheet_40.png",
+      "snake_body_40.png",
+      "snake_tail_40.png"
+    ],
+    "animations": [
+      {
+        "name": "snake_head_animation",
+        "time": 1000,
+        "spritesheet": "default_spritesheet_40.png",
+        "rowNumber": 0,
+        "numTiles": 2
+      },
+      {
+        "name": "apple_animation",
+        "time": 90,
+        "spritesheet": "default_spritesheet_40.png",
+        "rowNumber": 3,
+        "numTiles": 2
+      },
+      {
+        "name": "speed_powerup_animation",
+        "time": 130,
+        "spritesheet": "default_spritesheet_40.png",
+        "rowNumber": 4,
+        "numTiles": 4
+      },
+      {
+        "name": "score_powerup_animation",
+        "time": 300,
+        "spritesheet": "default_spritesheet_40.png",
+        "rowNumber": 5,
+        "numTiles": 2
+      }
+    ]
+  },
+  "food": {
+    "spritesheetName": "apple_animation"
+  },
+  "level": {
+    "levelsPath": "levels/level",
+    "maxLevels": 3,
+    "startingLevel": 1
+  },
+  "level1": {
+    "startVelocityTier": 0,
+    "itemFrequency": 3,
+    "targetSegments": 15,
+    "timeToMoveSnake": 200,
+    "foodScore": 10,
+    "scorePowerUpScore": 20,
+    "speedPowerUpScore": 15
+  },
+  "level2": {
+    "startVelocityTier": 0,
+    "itemFrequency": 2,
+    "targetSegments": 20,
+    "timeToMoveSnake": 175,
+    "foodScore": 15,
+    "scorePowerUpScore": 20,
+    "speedPowerUpScore": 20
+  },
+  "level3": {
+    "startVelocityTier": 0,
+    "itemFrequency": 2,
+    "targetSegments": 25,
+    "timeToMoveSnake": 125,
+    "foodScore": 20,
+    "scorePowerUpScore": 20,
+    "speedPowerUpScore": 25
+  },
+  "scorePowerUp": {
+    "spritesheetName": "score_powerup_animation"
+  },
+  "snake": {
+    "velocity": 1,
+    "maxVelocity": 1,
+    "timeSpeedPowerUpLasts": 5500,
+    "spritesheetName": "snake_head_animation",
+    "tailFileName": "snake_tail_40.png",
+    "bodyFileName": "snake_body_40.png"
+  },
+  "speedPowerUp": {
+    "spritesheetName": "speed_powerup_animation"
+  },
+  "wall": {
+    "spritesheetName": "wall_40.png"
+  },
+  "ui": {
+    "rColor": 100,
+    "gColor": 255,
+    "bColor": 100,
+    "startString": "Press space to play",
+    "deathString": "RIP, you have died",
+    "failedString": "All lives lost",
+    "completeString": "Congrats, you beat the game",
+    "replayString": "Press space to replay",
+    "replayStringLine2": "or esc to quit"
+  }
+}

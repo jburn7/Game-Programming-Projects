@@ -1,0 +1,686 @@
+{
+    "game": {
+        "assetsPath": "assets/",
+        "soundPath": "assets/sounds/",
+        "fontPath": "../../../shared/assignment1 sample assets/",
+        "fontSize": 40,
+        "saveFile": "data/saveFile.json",
+        "deathTime": 6000,
+        "startingLives": 3,
+        "width": 1280,
+        "height": 800,
+        "tileSize": 40,
+        "title": "Titled Final Project",
+        "velocityTier": [
+            40
+        ],
+        "graphicsBuffers": [
+            "wall_40.png",
+            "platformer_sprites_base.png",
+            "weapon_spritesheet.png",
+            "human_full_height_spritesheet.png",
+            "speedup.png",
+            "jumpboost.png",
+            "armor_pickups.png",
+            "menu_shader.png",
+            "health_bar.png",
+            "health_bar_outline.png",
+            "menu_tile.png",
+            "holy_grail.png",
+			"weapon_pickups.png"
+        ],
+        "soundBuffers": [
+            {
+                "name": "attack_collide_sound",
+                "filename": "metal1.wav"
+            },
+            {
+                "name": "default_attack_sound",
+                "filename": "swing.wav"
+            },
+            {
+                "name": "default_footstep_sound",
+                "filename": "cloth.wav"
+            },
+            {
+                "name": "default_death_sound",
+                "filename": "wilhelm.wav"
+            },
+            {
+                "name": "menu_click_sound",
+                "filename": "interface1.wav"
+            },
+            {
+                "name": "default_generic_pickup_sound",
+                "filename": "spell.wav"
+            },
+            {
+                "name": "default_armor_pickup_sound",
+                "filename": "chainmail1.wav"
+            },
+            {
+                "name": "default_victory_pickup_sound",
+                "filename": "coin2.wav"
+            },
+            {
+                "name": "default_background_music",
+                "filename": "CloudTopLoops.wav"
+            }
+        ],
+        "animations": [
+            {
+                "name": "melee_enemy_walking_animation",
+                "time": 100,
+                "spritesheet": "platformer_sprites_base.png",
+                "rowNumber": 7,
+                "numTiles": 8,
+                "width": 64,
+                "xGap": 0,
+                "height": 64,
+                "yGap": 0
+            },
+            {
+                "name": "melee_enemy_standing_animation",
+                "time": 100,
+                "spritesheet": "platformer_sprites_base.png",
+                "rowNumber": 8,
+                "numTiles": 1,
+                "width": 64,
+                "xGap": 0,
+                "height": 64,
+                "yGap": 0
+            },
+            {
+                "name": "lance_attack_animation",
+                "time": 1000000000,
+                "spritesheet": "weapon_spritesheet.png",
+                "rowNumber": 0,
+                "numTiles": 1,
+                "width": 34,
+                "xGap": 0,
+                "height": 11,
+                "yGap": 1
+            },
+            {
+                "name": "sword_attack_animation",
+                "time": 1000000000,
+                "spritesheet": "weapon_spritesheet.png",
+                "rowNumber": 2,
+                "numTiles": 1,
+                "width": 34,
+                "xGap": 0,
+                "height": 11,
+                "yGap": 0
+            },
+            {
+                "name": "axe_attack_animation",
+                "time": 1000000000,
+                "spritesheet": "weapon_spritesheet.png",
+                "rowNumber": 3,
+                "numTiles": 1,
+                "width": 34,
+                "xGap": 0,
+                "height": 12,
+                "yGap": 0
+            },
+            {
+                "name": "bow_projectile_attack_animation",
+                "time": 1000000000,
+                "spritesheet": "weapon_spritesheet.png",
+                "rowNumber": 1,
+                "numTiles": 1,
+                "width": 34,
+                "xGap": 0,
+                "height": 11,
+                "yGap": 1
+            },
+			{
+				"name": "_sword_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "weapon_pickups.png",
+				"rowNumber": 0,
+				"numTiles": 1,
+				"width": 32,
+				"xGap": 0,
+				"height": 32,
+				"yGap": 0
+			},
+			{
+				"name": "_bow_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "weapon_pickups.png",
+				"rowNumber": 1,
+				"numTiles": 1,
+				"width": 32,
+				"xGap": 0,
+				"height": 32,
+				"yGap": 0
+			},
+			{
+				"name": "_axe_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "weapon_pickups.png",
+				"rowNumber": 3,
+				"numTiles": 1,
+				"width": 32,
+				"xGap": 0,
+				"height": 32,
+				"yGap": 0
+			},
+			{
+				"name": "_lance_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "weapon_pickups.png",
+				"rowNumber": 2,
+				"numTiles": 1,
+				"width": 32,
+				"xGap": 0,
+				"height": 32,
+				"yGap": 0
+			},
+			{
+				"name": "helmet_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "armor_pickups.png",
+				"rowNumber": 0,
+				"numTiles": 1,
+				"width": 40,
+				"xGap": 0,
+				"height": 40,
+				"yGap": 0
+			},
+			{
+				"name": "chest_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "armor_pickups.png",
+				"rowNumber": 1,
+				"numTiles": 1,
+				"width": 40,
+				"xGap": 0,
+				"height": 40,
+				"yGap": 0
+			},
+			{
+				"name": "leggings_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "armor_pickups.png",
+				"rowNumber": 2,
+				"numTiles": 1,
+				"width": 40,
+				"xGap": 0,
+				"height": 40,
+				"yGap": 0
+			},
+			{
+				"name": "boots_pickup_animation",
+				"time": 1000000000,
+				"spritesheet": "armor_pickups.png",
+				"rowNumber": 3,
+				"numTiles": 1,
+				"width": 40,
+				"xGap": 0,
+				"height": 40,
+				"yGap": 0
+			}
+        ]
+    },
+    "difficulty": [
+        {
+            "name": "easy",
+            "multiplier": 1.0
+        },
+        {
+            "name": "normal",
+            "multiplier": 1.5
+        },
+        {
+            "name": "hard",
+            "multiplier": 2.0
+        }
+    ],
+	"food": {
+		"spritesheetName": "apple_animation"
+	},
+	"level": {
+		"levelsPath": "levels/level",
+		"maxLevels": 3,
+		"startingLevel": 1
+	},
+	"level1": {
+        "levelMask": "mask.txt",
+        "maxYVal": 1500
+	},
+    "level2": {
+        "levelMask": "mask.txt",
+        "maxYVal": 1500
+    },
+    "level3": {
+        "levelMask": "mask.txt",
+        "maxYVal": 2500
+    },
+    "melee enemy": {
+        "health": 10,
+        "maxHorizontalVelocity": 2,
+        "maxVerticalVelocity": 15,
+        "jumpVelocity": 9,
+        "damageVal": 3,
+        "detectionRadius": 250,
+        "width": 30,
+        "weapon": {
+            "weapon_type": 0,
+            "weapon_scale": 0
+        },
+        "height": 64,
+        "handX": 15,
+        "handY": -15,
+        "hitRegenTime": 700,
+        "normalRColor": 16,
+        "normalGColor": 247,
+        "normalBColor": 0,
+        "animations": [
+            {
+                "description": "standing",
+                "animationName": "melee_enemy_standing_animation"
+            },
+            {
+                "description": "walking",
+                "animationName": "melee_enemy_walking_animation"
+            }
+        ],
+        "health_bar": "health_bar.png",
+        "health_bar_outline": "health_bar_outline.png",
+        "sounds": [
+            {
+                "description": "footstep_1",
+                "soundBufferName": "default_footstep_sound"
+            },
+            {
+                "description": "death",
+                "soundBufferName": "default_death_sound"
+            }
+        ]
+    },
+    "bow enemy": {
+		"health": 15,
+		"maxHorizontalVelocity": 0,
+		"maxVerticalVelocity": 15,
+		"jumpVelocity": 9,
+        "damageVal": 2,
+        "detectionRadius": 400,
+        "width": 30,
+        "weapon": {
+            "weapon_type": 3,
+            "weapon_scale": 0
+        },
+		"height": 64,
+		"handX": 15,
+		"handY": -15,
+		"hitRegenTime": 400,
+		"color": {
+            "r": 100,
+            "g": 0,
+            "b": 245
+        },
+        "animations": [
+            {
+                "description": "standing",
+                "animationName": "melee_enemy_standing_animation"
+            },
+            {
+                "description": "walking",
+                "animationName": "melee_enemy_walking_animation"
+            }
+        ],
+        "health_bar": "health_bar.png",
+        "health_bar_outline": "health_bar_outline.png",
+		"sounds": [
+			{
+				"description": "footstep_1",
+				"soundBufferName": "default_footstep_sound"
+			},
+			{
+				"description": "death",
+				"soundBufferName": "default_death_sound"
+			}
+		]
+	},
+	"player": {
+        "color": {
+            "r": 100,
+            "g": 245,
+            "b": 0
+        },
+        "health": 100,
+        "maxHorizontalVelocity": 3,
+        "weapon": {
+            "weapon_type": 0,
+            "weapon_scale": 2
+        }
+	},
+	"wall": {
+		"spritesheetName": "wall_40.png"
+	},
+    "ui": {
+        "rColor": 100,
+        "gColor": 255,
+        "bColor": 100,
+        "fontPath": "../../../shared/assignment1 sample assets/cour.ttf",
+        "menuShader": "menu_shader.png",
+        "startString": "Press space to play",
+        "deathString": "RIP, you have died",
+        "deathString2": "Press space to restart",
+        "failedString": "All lives lost",
+        "completeString": "Congrats, you beat the game",
+        "replayString": "Press space to replay",
+        "replayStringLine2": "or esc to quit",
+        "fontSize": 40,
+        "box_background": "menu_tile.png",
+        "ui_boxes": [
+            {
+                "name": "playing_ui_boxes",
+                "boxes": [
+                    {
+                        "string": "FPS: ",
+                        "function": "none"
+                    },
+                    {
+                        "string": "Lives: ",
+                        "function": "none"
+                    },
+                    {
+                        "string": "Score: ",
+                        "function": "none"
+                    }
+                ]
+            },
+            {
+                "name": "main_menu_ui_boxes",
+                "boxes": [
+                    {
+                        "string": "Play",
+                        "function": "play"
+                    },
+                    {
+                        "string": "Options",
+                        "function": "menu options_ui_boxes"
+                    },
+                    {
+                        "string": "Load",
+                        "function": "load"
+                    },
+                    {
+                        "string": "Quit",
+                        "function": "quit"
+                    }
+                ]
+            },
+            {
+                "name": "options_ui_boxes",
+                "boxes": [
+                    {
+                        "string": "Difficulty",
+                        "function": "menu difficulty_ui_boxes"
+                    },
+                    {
+                        "string": "Sound On/Off",
+                        "function": "taud"
+                    },
+                    {
+                        "string": "Back",
+                        "function": "menu main_menu_ui_boxes"
+                    }
+                ]
+            },
+            {
+                "name": "difficulty_ui_boxes",
+                "boxes": [
+                    {
+                        "string": "Easy",
+                        "function": "diff easy"
+                    },
+                    {
+                        "string": "Normal",
+                        "function": "diff normal"
+                    },
+                    {
+                        "string": "Hard",
+                        "function": "diff hard"
+                    },
+                    {
+                        "string": "Back",
+                        "function": "menu options_ui_boxes"
+                    }
+                ]
+            }
+        ]
+    },
+    "weaponScale": [
+        "bronze",
+        "steel",
+        "silver"
+    ],
+    "weapon_types": [
+        "_lance",
+		"_sword",
+		"_axe",
+        "_bow"
+    ],
+	"bronze_lance": {
+		"width": 34,
+		"height": 11,
+		"damage": 3,
+		"weapon time": 600,
+		"weapon reset": 900,
+		"color": {
+			"r": 220,
+			"g": 180,
+			"b": 180
+		}
+	},
+	"steel_lance": {
+		"width": 200,
+		"height": 5,
+		"damage": 2,
+		"weapon time": 200,
+		"weapon reset": 400,
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255
+		}
+	},
+    "silver_lance": {
+        "width": 70,
+        "height": 10,
+        "damage": 3,
+        "weapon time": 80,
+        "weapon reset": 80,
+        "color": {
+            "r": 0,
+            "g": 70,
+            "b": 100
+        }
+    },
+    "bronze_bow": {
+		"width": 34,
+		"height": 11,
+		"damage": 3,
+		"weapon time": 4000,
+        "weapon reset": 2000,
+        "velocity": 9,
+		"color": {
+			"r": 220,
+			"g": 180,
+			"b": 180
+		}
+	},
+	"steel_bow": {
+		"width": 200,
+		"height": 5,
+		"damage": 2,
+		"weapon time": 200,
+		"weapon reset": 400,
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255
+		}
+	},
+	"silver_bow": {
+		"width": 70,
+		"height": 10,
+		"damage": 3,
+		"weapon time": 80,
+		"weapon reset": 80,
+		"color": {
+            "r": 0,
+            "g": 70,
+            "b": 100
+        }
+	},
+	"bronze_sword": {
+		"width": 34,
+		"height": 12,
+		"damage": 2,
+		"weapon time": 50,
+		"weapon reset": 50,
+		"color": {
+			"r": 230,
+			"g": 150,
+			"b": 60
+		}
+	},
+	"silver_sword": {
+		"width": 34,
+		"height": 12,
+		"damage": 4,
+		"weapon time": 30,
+		"weapon reset": 20,
+		"color": {
+			"r": 200,
+			"g": 220,
+			"b": 230
+		}
+	},
+	"steel_sword": {
+		"width": 34,
+		"height": 12,
+		"damage": 1,
+		"weapon time": 40,
+		"weapon reset": 30,
+		"color": {
+			"r": 128,
+			"g": 128,
+			"b": 128
+		}
+	},
+	"bronze_axe": {
+		"width": 34,
+		"height": 12,
+		"damage": 8,
+		"weapon time": 90,
+		"weapon reset": 1500,
+		"color": {
+			"r": 230,
+			"g": 150,
+			"b": 60
+		}
+	},
+	"steel_axe": {
+		"width": 34,
+		"height": 12,
+		"damage": 10,
+		"weapon time": 70,
+		"weapon reset": 1200,
+		"color": {
+			"r": 128,
+			"g": 128,
+			"b": 128
+		}
+	},
+    "silver_axe": {
+        "width": 34,
+        "height": 12,
+        "damage": 12,
+        "weapon time": 50,
+        "weapon reset": 1000,
+        "color": {
+            "r": 200,
+            "g": 220,
+            "b": 230
+        }
+    },
+	"pickup_speedup": {
+		"width": 32,
+		"height": 32,
+		"spritesheetName": "speedup.png",
+		"duration": 10,
+		"power": 2.3
+	},
+	"pickup_jumpboost": {
+		"width": 32,
+		"height": 32,
+		"spritesheetName": "jumpboost.png",
+		"duration": 20,
+		"power": 1.7
+	},
+    "pickup_armor": {
+        "width": 40,
+        "height": 40,
+        "spritesheetName": "armor_pickups.png"
+    },
+	"pickup_weapon": {
+		"width": 32,
+		"height": 32,
+		"spritesheetName": "weapon_pickups.png"
+	},
+    "pickup_victory_item": {
+		"width": 32,
+		"height": 45,
+		"spritesheetName": "holy_grail.png",
+		"duration": 0,
+		"power": 0
+	},
+	"armor": [
+		{
+			"class": "chest",
+			"name": "steel_chest_armor",
+			"protection": 2,
+			"color": {
+				"r": 220,
+				"g": 230,
+				"b": 240
+			}
+		},
+		{
+			"class": "chest",
+			"name": "gold_chest_armor",
+			"protection": 5,
+			"color": {
+				"r": 255,
+				"g": 240,
+				"b": 32
+			}
+		},
+		{
+			"class": "helmet",
+			"name": "steel_helmet",
+			"protection": 1,
+			"color": {
+				"r": 220,
+				"g": 230,
+				"b": 240
+			}
+		},
+		{
+			"class": "helmet",
+			"name": "gold_helmet",
+			"protection": 3,
+			"color": {
+				"r": 255,
+				"g": 240,
+				"b": 32
+			}
+		}
+	]
+}

@@ -1,0 +1,40 @@
+#pragma once
+#include <string>
+#include <trackable.h>
+
+enum EventType
+{
+	INVALID_EVENT_TYPE = -1,
+	DIFFICULTY_CHANGE_EVENT,
+	INCREMENT_SCORE_EVENT,
+	INCREMENT_LIVES_EVENT,
+	INPUT_RELEASE_EVENT,
+	LEVEL_END_EVENT,
+	LOAD_EVENT,
+	MOVE_PLAYER_EVENT,
+	MOUSE_CLICK_EVENT,
+	MOUSE_MOVE_EVENT,
+	PLAYER_HEALTH_EVENT,
+	PLAYER_INPUT_EVENT,
+	PAUSE_EVENT,
+	PLAYER_DEATH_EVENT,
+	PLAY_SOUND_EVENT,
+	QUIT_EVENT,
+	START_EVENT,
+	UNIT_ADD_EVENT,
+	UNIT_REMOVE_EVENT,
+	UPDATE_FPS_EVENT,
+	VICTORY_ITEM_FOUND_EVENT,
+	VOLUME_EVENT
+};
+
+class Event:public Trackable
+{
+public:
+	Event( EventType type );
+	virtual ~Event();
+
+	EventType getType() const { return mType; };
+private:
+	EventType mType;
+};

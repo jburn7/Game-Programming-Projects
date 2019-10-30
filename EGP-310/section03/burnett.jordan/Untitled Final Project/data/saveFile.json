@@ -1,0 +1,242 @@
+{
+    "units": [
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 40.0,
+            "positionY": 160.0,
+            "type": 2
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 680.0,
+            "positionY": 160.0,
+            "type": 2
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 1040.0,
+            "positionY": 160.0,
+            "type": 2
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 40.0,
+            "positionY": 320.0,
+            "type": 2
+        },
+        {
+            "current_animation": "standing",
+            "facing_left": false,
+            "positionX": 160.0,
+            "positionY": 96.0,
+            "type": 1,
+            "entity_type": 1,
+            "input_type": 0,
+            "velocityX": 0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 15.0,
+            "max_health": 15.0,
+            "weapon": {
+                "weapon_type": 3,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        },
+        {
+            "current_animation": "standing",
+            "facing_left": false,
+            "positionX": 680.0,
+            "positionY": 96.0,
+            "type": 1,
+            "entity_type": 1,
+            "input_type": 0,
+            "velocityX": 0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 15.0,
+            "max_health": 15.0,
+            "weapon": {
+                "weapon_type": 3,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        },
+        {
+            "current_animation": "standing",
+            "facing_left": false,
+            "positionX": 816.0,
+            "positionY": 96.0,
+            "type": 1,
+            "entity_type": 0,
+            "input_type": 1,
+            "velocityX": 0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 10.0,
+            "max_health": 10.0,
+            "weapon": {
+                "weapon_type": 0,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        },
+        {
+            "color": {
+                "color_r": 100,
+                "color_g": 245,
+                "color_b": 0
+            },
+            "current_animation": "standing",
+            "facing_left": false,
+            "positionX": 840.0,
+            "positionY": 96.0,
+            "type": 1,
+            "entity_type": 0,
+            "input_type": 2,
+            "velocityX": 0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 85.0,
+            "max_health": 100.0,
+            "weapon": {
+                "weapon_type": 0,
+                "weapon_scale": 2
+            },
+            "active_powerups": [],
+            "hit_recovery": true,
+            "is_player": true
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 960.0,
+            "positionY": 120.0,
+            "type": 3,
+            "pickup_type": 2
+        },
+        {
+            "current_animation": "standing",
+            "facing_left": true,
+            "positionX": 1040.0,
+            "positionY": 96.0,
+            "type": 1,
+            "entity_type": 1,
+            "input_type": 0,
+            "velocityX": -0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 15.0,
+            "max_health": 15.0,
+            "weapon": {
+                "weapon_type": 3,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 80.0,
+            "positionY": 280.0,
+            "type": 3,
+            "pickup_type": 5
+        },
+        {
+            "current_animation": "walking",
+            "facing_left": false,
+            "positionX": 582.0,
+            "positionY": 256.0,
+            "type": 1,
+            "entity_type": 0,
+            "input_type": 1,
+            "velocityX": 2.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 10.0,
+            "max_health": 10.0,
+            "weapon": {
+                "weapon_type": 0,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 400.0,
+            "positionY": 280.0,
+            "type": 3,
+            "pickup_type": 4
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 640.0,
+            "positionY": 280.0,
+            "type": 3,
+            "pickup_type": 0
+        },
+        {
+            "color": {
+                "color_r": 220,
+                "color_g": 230,
+                "color_b": 240
+            },
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 800.0,
+            "positionY": 280.0,
+            "type": 3,
+            "pickup_type": 1,
+            "armor_type": "chest"
+        },
+        {
+            "current_animation": "default",
+            "facing_left": true,
+            "positionX": 1000.0,
+            "positionY": 280.0,
+            "type": 3,
+            "pickup_type": 0
+        },
+        {
+            "current_animation": "standing",
+            "facing_left": true,
+            "positionX": 874.0,
+            "positionY": 256.0,
+            "type": 1,
+            "entity_type": 0,
+            "input_type": 1,
+            "velocityX": 0.0,
+            "velocityY": 0.0,
+            "is_on_ground": true,
+            "remaining_health": 10.0,
+            "max_health": 10.0,
+            "weapon": {
+                "weapon_type": 0,
+                "weapon_scale": 0
+            },
+            "active_powerups": [],
+            "hit_recovery": false,
+            "is_player": false
+        }
+    ],
+    "level_number": 0,
+    "victory_items_found": 0,
+    "victory_items_required": 1,
+    "difficulty": 0
+}
